@@ -1,0 +1,28 @@
+GET http://localhost:3000/
+Content-Type: application/json
+
+{
+    "query": "phone",
+    "page": 1
+}
+
+###
+
+GET http://localhost:3000/
+Content-Type: application/xml
+Accept: application/xml
+
+<root>
+  <query>phone</query>
+  <page>2</page>
+</root>
+
+###
+
+POST http://localhost:3000/2
+Content-Type: application/json
+
+{
+    "query": "phone",
+    "page": 1
+}
